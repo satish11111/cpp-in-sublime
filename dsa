@@ -1,0 +1,703 @@
+#include<bits/stdc++.h>
+using namespace std;
+void solve(){
+        
+}
+int main(){
+        int testcase;
+        cin>>testcase;
+        for(int i=0;i<testcase;i++){
+                solve();
+        }
+}
+
+
+
+sort(arr, arr + n);
+
+int n = sizeof(arr) / sizeof(arr[0]);
+
+sort(arr, arr + n, greater<int>())
+
+#include<vector>
+
+begin() – Returns an iterator pointing to the first element in the vector
+end() – Returns an iterator pointing to the theoretical element that follows the last element in the vector
+rbegin() – Returns a reverse iterator pointing to the last element in the vector (reverse beginning). It moves from last to first element
+rend() – Returns a reverse iterator pointing to the theoretical element preceding the first element in the vector (considered as reverse end)
+cbegin() – Returns a constant iterator pointing to the first element in the vector.
+cend() – Returns a constant iterator pointing to the theoretical element that follows the last element in the vector.
+crbegin() – Returns a constant reverse iterator pointing to the last element in the vector (reverse beginning). It moves from last to first element
+crend() – Returns a constant reverse iterator pointing to the theoretical element preceding the first element in the vector (considered as reverse end)
+
+
+size() – Returns the number of elements in the vector.
+max_size() – Returns the maximum number of elements that the vector can hold.
+capacity() – Returns the size of the storage space currently allocated to the vector expressed as number of elements.
+resize(n) – Resizes the container so that it contains ‘n’ elements.
+empty() – Returns whether the container is empty.
+shrink_to_fit() – Reduces the capacity of the container to fit its size and destroys all elements beyond the capacity.
+reserve() – Requests that the vector capacity be at least enough to contain n elements.
+
+
+assign() – It assigns new value to the vector elements by replacing old ones
+push_back() – It push the elements into a vector from the back
+pop_back() – It is used to pop or remove elements from a vector from the back.
+insert() – It inserts new elements before the element at the specified position
+erase() – It is used to remove elements from a container from the specified position or range.
+swap() – It is used to swap the contents of one vector with another vector of same type. Sizes may differ.
+clear() – It is used to remove all the elements of the vector container
+emplace() – It extends the container by inserting new element at position
+emplace_back() – It is used to insert a new element into the vector container, the new element is added to the end of the vector
+
+
+
+#include <queue>
+
+queue::empty()	Returns whether the queue is empty. It return true if the queue is empty otherwise returns false.
+queue::size()	Returns the size of the queue.
+queue::swap()	Exchange the contents of two queues but the queues must be of the same data type, although sizes may differ.
+queue::emplace()	Insert a new element into the queue container, the new element is added to the end of the queue.
+queue::front()	Returns a reference to the first element of the queue.
+queue::back()	Returns a reference to the last element of the queue.
+queue::push(g) 	Adds the element ‘g’ at the end of the queue.
+queue::pop() 	Deletes the first element of the queue.
+
+
+
+#include<stack>
+
+empty() – Returns whether the stack is empty – Time Complexity : O(1) 
+size() – Returns the size of the stack – Time Complexity : O(1) 
+top() – Returns a reference to the top most element of the stack – Time Complexity : O(1) 
+push(g) – Adds the element ‘g’ at the top of the stack – Time Complexity : O(1) 
+pop() – Deletes the top most element of the stack – Time Complexity : O(1) 
+
+
+
+#include<set>
+
+
+set<int> val; // defining an empty set
+set<int> val = {6, 10, 5, 1}; // defining a set with values
+
+begin() – Returns an iterator to the first element in the set.
+end() – Returns an iterator to the theoretical element that follows the last element in the set.
+size() – Returns the number of elements in the set.
+max_size() – Returns the maximum number of elements that the set can hold.
+empty() – Returns whether the set is empty.
+
+rbegin()	Returns a reverse iterator pointing to the last element in the container.
+rend()	Returns a reverse iterator pointing to the theoretical element right before the first element in the set container.
+crbegin()	Returns a constant iterator pointing to the last element in the container.
+crend()	Returns a constant iterator pointing to the position just before the first element in the container.
+find(const g)	Returns an iterator to the element ‘g’ in the set if found, else returns the iterator to end.
+
+lower_bound(const g)	Returns an iterator to the first element that is equivalent to ‘g’ or definitely will not go before the element ‘g’ in the set.
+upper_bound(const g)	Returns an iterator to the first element that will go after the element ‘g’ in the set
+swap()	This function is used to exchange the contents of two sets but the sets must be of the same type, although sizes may differ.
+
+
+ #include<map>
+
+ begin() – Returns an iterator to the first element in the map.
+end() – Returns an iterator to the theoretical element that follows the last element in the map.
+size() – Returns the number of elements in the map.
+max_size() – Returns the maximum number of elements that the map can hold.
+empty() – Returns whether the map is empty.
+pair insert(keyvalue, mapvalue) – Adds a new element to the map.
+erase(iterator position) – Removes the element at the position pointed by the iterator.
+erase(const g)– Removes the key-value ‘g’ from the map.
+clear() – Removes all the elements from the map.
+
+gquiz1.insert(pair<int, int>(1, 40));
+map<int, int> gquiz2(gquiz1.begin(), gquiz1.end());
+  
+
+unordered_set <string> stringSet ;
+
+ stringSet.insert("code") 
+
+insert()– Insert a new {element} in the unordered_set container.
+begin()– Return an iterator pointing to the first element in the unordered_set container.
+end()– Returns an iterator pointing to the past-the-end-element.
+count()– Count occurrences of a particular element in an unordered_set container.
+find()– Search for an element in the container.
+clear()– Removes all of the elements from an unordered_set and empties it.
+cbegin()– Return a const_iterator pointing to the first element in the unordered_set container.
+cend()– Return a const_iterator pointing to past-the-end element in the unordered_set container or in one of it’s bucket.
+bucket_size()– Returns the total number of elements present in a specific bucket in an unordered_set container.
+erase()– Remove either a single element or a range of elements ranging from start(inclusive) to end(exclusive).
+size()– Return the number of elements in the unordered_set container.
+swap()– Exchange values of two unordered_set containers.
+emplace()– Insert an element in an unordered_set container.
+max_size()– Returns maximum number of elements that an unordered_set container can hold.
+empty()– Check if an unordered_set container is empty or not.
+equal_range– Returns range that includes all elements equal to given value.
+operator= – Copies (or moves) an unordered_set to another unordered_set and unordered_set::operator= is the corresponding operator function.
+hash_function() – This hash function is a unary function which takes asingle argument only and returns a unique value of type size_t based on it.
+reserve()– Used to request capacity change of unordered_set.
+bucket()– Returns the bucket number of a specific element.
+bucket_count() – Returns the total number of buckets present in an unordered_set container.
+load_factor()– Returns the current load factor in the unordered_set container.
+rehash()– Set the number of buckets in the container of unordered_set to given size or more.
+max_load_factor()– Returns(Or sets) the current maximum load factor of the unordered set container.
+emplace_hint()– Inserts a new element in the unordered_set only if the value to be inserted is unique, with a given hint.
+== operator – The ‘==’ is an operator in C++ STL performs equality comparison operation between two unordered sets and unordered_set::operator== is the corresponding operator function for the same.
+key_eq()– Returns a boolean value according to the comparison. It returns the key equivalence comparison predicate used by the unordered_set.
+operator!=– The != is a relational operator in C++ STL which compares the equality and inequality between unordered_set containers.
+max_bucket_count() – Find the maximum number of buckets that unordered_set can have.
+
+
+#include<priority_queue>
+priority_queue<int> gquiz;
+
+gquiz.push(10);
+
+priority_queue <int, vector<int>, greater<int>> g = gq; 
+
+
+#include<deque>
+deque<int> gquiz;
+gquiz.push_back(10)
+
+
+Approach: 
+BFS(Breadth-First Search) is a graph traversal technique where a node and its neighbours are visited first and then the neighbours of neighbours. In simple terms, it traverses level-wise from the source. First, it traverses level 1 nodes (direct neighbours of source node) and then level 2 nodes (neighbours of source node) and so on. The BFS can be used to determine the level of each node from a given source node.
+
+Algorithm: 
+
+Create the tree, a queue to store the nodes and insert the root or starting node in the queue. Create an extra array level of size v (number of vertices) and create a visited array.
+Run a loop while size of queue is greater than 0.
+Mark the current node as visited.
+Pop one node from the queue and insert its childrens (if present) and update the size of the inserted node as level[child] = level[node] + 1.
+Print all the node and its level.
+
+
+
+Implementation of BFS traversal:
+Follow the below method to implement BFS traversal.
+
+Declare a queue and insert the starting vertex.
+Initialize a visited array and mark the starting vertex as visited.
+Follow the below process till the queue becomes empty:
+Remove the first vertex of the queue.
+Mark that vertex as visited.
+Insert all the unvisited neighbours of the vertex into the queue.
+
+
+KMP Algorithm
+
+Input:  txt[] = "THIS IS A TEST TEXT"
+        pat[] = "TEST"
+Output: Pattern found at index 10
+
+
+
+Rabin-Karp Algorithm for Pattern Searching
+
+Input:  txt[] = "THIS IS A TEST TEXT"
+        pat[] = "TEST"
+Output: Pattern found at index 10
+
+
+function
+int add(int x, int y)
+int multiply(int x, int y)
+
+
+int invoke(int x, int y,int (*func)(int, int))
+void processArr(int a[][2])
+
+
+main----
+invoke(20, 10, &multiply)
+processArr(arr);
+
+cin
+cin.get()
+cin.getline()
+
+int *pnPtr; // a pointer to an integer value 
+
+ddouble *pdPtr; // a pointer to a double value   
+
+int* pnPtr2; // also valid syntax
+
+int * pnPtr3; // also valid syntax
+
+
+int p = 5; 
+
+int * q = &p
+
+
+Dereference Operator [ * ]
+
+An interesting property of pointers is that they can be used to access thevariable they point to directly. This is done by preceding the pointer namewith the dereference operator. The operator itself can be read as "valuepointed to by
+
+int r = *q
+
+Null Pointer
+
+Sometimes it is useful to make our pointers point to nothing. This is calleda null pointer. We assign a pointer a null value by setting it to address 0.
+
+double *p = 0;
+
+
+ch a='s';
+cout<<&a<<endl;-------->s
+opeartor overloading
+exciplt type casting
+cout<<(void *)&a<<endl;-------->print the address of character
+
+
+
+
+char c='a';
+    //cout<<&c<<endl;//not printing addreess
+    // cout<<(void *)&c<<endl;
+
+
+
+show(a, asize);
+
+void show(int a[], int arraysize)
+{
+    for (int i = 0; i < arraysize; ++i)
+        cout << a[i] << ",";
+}
+
+
+
+binary_search(a, a + 10, 2)
+
+
+pair<int, char> PAIR1;
+ PAIR1.first = 100;
+    // second part of the pair
+    PAIR1.second = 'G';
+
+    pair1.swap(pair2) ;
+
+pair<int, int> pair1 = { 1, 2 };
+    int a, b;
+    tie(a, b) = pair1;
+    cout << a << " " << b << "\n";
+
+
+vector
+
+vector<int> g1;
+
+for (int i = 1; i <= 5; i++)
+        g1.push_back(i);
+
+cout << "Size : " << g1.size();
+    cout << "\nCapacity : " << g1.capacity();
+    cout << "\nMax_Size : " << g1.max_size();
+
+
+2d
+
+vector< vector<int> > vect{{1, 2},
+                               {3, 4, 5},
+                               {6}};
+ 
+    // Displaying the 2D vector
+    for (int i=0; i<vect.size(); i++)
+    {
+        //loop till the size of particular
+        //row
+        for (int j=0; j<vect[i].size() ;j++)
+            cout << vect[i][j] << " ";
+        cout << endl;
+    }
+
+ sort(vect.begin(), vect.end(), sizecom);
+
+
+ list
+
+  list<int> gqlist;
+
+  for (int i = 1; i <= 5; i++)
+        gqlist.emplace_back(i);
+
+
+merge(list2):
+
+  list<int> gqlist1 = { 1, 2, 3 };
+ 
+    // Initializing list2
+    list<int> gqlist2 = { 2, 4, 6 };
+ 
+    // using merge() to merge list1 with list2
+    gqlist1.merge(gqlist2)
+
+
+gqlist1.swap(gqlist2);
+
+
+
+Deque
+
+void showdq(deque<int> g)
+{
+    deque<int>::iterator it;
+    for (it = g.begin(); it != g.end(); ++it)
+        cout << '\t' << *it;
+    cout << '\n';
+}
+
+deque<int> gquiz;
+    gquiz.push_back(10);
+    gquiz.push_front(20);
+    gquiz.push_back(30);
+    gquiz.push_front(15);
+    cout << "The deque gquiz is : ";
+    showdq(gquiz);
+
+
+queue
+
+queue<int> gquiz;
+    gquiz.push(10);
+    gquiz.push(20);
+    gquiz.push(30);
+  
+    cout << "The queue gquiz is : ";
+    showq(gquiz);
+
+q1.swap(q2);
+
+
+
+
+Priority Queue 
+
+
+void showpq(priority_queue<int> gq)
+{
+    priority_queue<int> g = gq;
+    while (!g.empty()) {
+        cout << '\t' << g.top();
+        g.pop();
+    }
+    cout << '\n';
+}
+
+
+ priority_queue<int> gquiz;
+    gquiz.push(10);
+
+
+
+ stack<int> stack;
+stack.push(21);
+ while (!stack.empty()) {
+        cout << stack.top() <<" ";
+        stack.pop();
+    }
+
+
+
+set
+
+set<int, greater<int> > s1;
+ 
+    // insert elements in random order
+    s1.insert(40);
+    s1.insert(30);
+    s1.insert(60);
+    s1.insert(20);
+    s1.insert(50);
+ 
+    // only one 50 will be added to the set
+    s1.insert(50);
+    s1.insert(10);
+ 
+    // printing set s1
+    set<int, greater<int> >::iterator itr;
+    cout << "\nThe set s1 is : \n";
+    for (itr = s1.begin(); itr != s1.end(); itr++) {
+        cout << *itr << " ";
+    }
+    cout << endl;
+ 
+    // assigning the elements from s1 to s2
+    set<int> s2(s1.begin(), s1.end());
+ 
+
+
+
+ multiset
+
+ multiset<int, greater<int> > gquiz1;
+ 
+    // insert elements in random order
+    gquiz1.insert(40);
+    gquiz1.insert(30);
+    gquiz1.insert(60);
+    gquiz1.insert(20);
+    gquiz1.insert(50);
+ 
+    // 50 will be added again to
+    // the multiset unlike set
+    gquiz1.insert(50);
+    gquiz1.insert(10);
+ 
+    // printing multiset gquiz1
+    multiset<int, greater<int> >::iterator itr;
+    cout << "\nThe multiset gquiz1 is : \n";
+    for (itr = gquiz1.begin(); itr != gquiz1.end(); ++itr) {
+        cout << *itr << " ";
+    }
+    cout << endl;
+ 
+    // assigning the elements from gquiz1 to gquiz2
+    multiset<int> gquiz2(gquiz1.begin(), gquiz1.end());
+ 
+
+ map
+
+
+ // CPP Program to demonstrate the implementation in Map
+// divyansh mishra --> divyanshmishra101010
+#include <iostream>
+#include <iterator>
+#include <map>
+using namespace std;
+
+int main()
+{
+
+        // empty map container
+        map<int, int> gquiz1;
+
+        // insert elements in random order
+        gquiz1.insert(pair<int, int>(1, 40));
+        gquiz1.insert(pair<int, int>(2, 30));
+        gquiz1.insert(pair<int, int>(3, 60));
+        gquiz1.insert(pair<int, int>(4, 20));
+        gquiz1.insert(pair<int, int>(5, 50));
+        gquiz1.insert(pair<int, int>(6, 50));
+        
+        gquiz1[7]=10;    // another way of inserting a value in a map
+        
+
+        // printing map gquiz1
+        map<int, int>::iterator itr;
+        cout << "\nThe map gquiz1 is : \n";
+        cout << "\tKEY\tELEMENT\n";
+        for (itr = gquiz1.begin(); itr != gquiz1.end(); ++itr) {
+                cout << '\t' << itr->first << '\t' << itr->second
+                        << '\n';
+        }
+        cout << endl;
+
+        // assigning the elements from gquiz1 to gquiz2
+        map<int, int> gquiz2(gquiz1.begin(), gquiz1.end());
+
+        // print all elements of the map gquiz2
+        cout << "\nThe map gquiz2 after"
+                << " assign from gquiz1 is : \n";
+        cout << "\tKEY\tELEMENT\n";
+        for (itr = gquiz2.begin(); itr != gquiz2.end(); ++itr) {
+                cout << '\t' << itr->first << '\t' << itr->second
+                        << '\n';
+        }
+        cout << endl;
+
+        // remove all elements up to
+        // element with key=3 in gquiz2
+        cout << "\ngquiz2 after removal of"
+                        " elements less than key=3 : \n";
+        cout << "\tKEY\tELEMENT\n";
+        gquiz2.erase(gquiz2.begin(), gquiz2.find(3));
+        for (itr = gquiz2.begin(); itr != gquiz2.end(); ++itr) {
+                cout << '\t' << itr->first << '\t' << itr->second
+                        << '\n';
+        }
+
+        // remove all elements with key = 4
+        int num;
+        num = gquiz2.erase(4);
+        cout << "\ngquiz2.erase(4) : ";
+        cout << num << " removed \n";
+        cout << "\tKEY\tELEMENT\n";
+        for (itr = gquiz2.begin(); itr != gquiz2.end(); ++itr) {
+                cout << '\t' << itr->first << '\t' << itr->second
+                        << '\n';
+        }
+
+        cout << endl;
+
+        // lower bound and upper bound for map gquiz1 key = 5
+        cout << "gquiz1.lower_bound(5) : "
+                << "\tKEY = ";
+        cout << gquiz1.lower_bound(5)->first << '\t';
+        cout << "\tELEMENT = " << gquiz1.lower_bound(5)->second
+                << endl;
+        cout << "gquiz1.upper_bound(5) : "
+                << "\tKEY = ";
+        cout << gquiz1.upper_bound(5)->first << '\t';
+        cout << "\tELEMENT = " << gquiz1.upper_bound(5)->second
+                << endl;
+
+        return 0;
+}
+
+
+
+
+mutlimap
+
+
+// CPP Program to demonstrate the implementation of multimap
+#include <iostream>
+#include <iterator>
+#include <map>
+using namespace std;
+
+// Driver Code
+int main()
+{
+        multimap<int, int> gquiz1; // empty multimap container
+
+        // insert elements in random order
+        gquiz1.insert(pair<int, int>(1, 40));
+        gquiz1.insert(pair<int, int>(2, 30));
+        gquiz1.insert(pair<int, int>(3, 60));
+        gquiz1.insert(pair<int, int>(6, 50));
+        gquiz1.insert(pair<int, int>(6, 10));
+
+        // printing multimap gquiz1
+        multimap<int, int>::iterator itr;
+        cout << "\nThe multimap gquiz1 is : \n";
+        cout << "\tKEY\tELEMENT\n";
+        for (itr = gquiz1.begin(); itr != gquiz1.end(); ++itr) {
+                cout << '\t' << itr->first << '\t' << itr->second
+                        << '\n';
+        }
+        cout << endl;
+
+        // adding elements randomly,
+        // to check the sorted keys property
+        gquiz1.insert(pair<int, int>(4, 50));
+        gquiz1.insert(pair<int, int>(5, 10));
+
+        // printing multimap gquiz1 again
+
+        cout << "\nThe multimap gquiz1 after adding extra "
+                        "elements is : \n";
+        cout << "\tKEY\tELEMENT\n";
+        for (itr = gquiz1.begin(); itr != gquiz1.end(); ++itr) {
+                cout << '\t' << itr->first << '\t' << itr->second
+                        << '\n';
+        }
+        cout << endl;
+
+        // assigning the elements from gquiz1 to gquiz2
+        multimap<int, int> gquiz2(gquiz1.begin(), gquiz1.end());
+
+        // print all elements of the multimap gquiz2
+        cout << "\nThe multimap gquiz2 after assign from "
+                        "gquiz1 is : \n";
+        cout << "\tKEY\tELEMENT\n";
+        for (itr = gquiz2.begin(); itr != gquiz2.end(); ++itr) {
+                cout << '\t' << itr->first << '\t' << itr->second
+                        << '\n';
+        }
+        cout << endl;
+
+        // remove all elements up to
+        // key with value 3 in gquiz2
+        cout << "\ngquiz2 after removal of elements less than "
+                        "key=3 : \n";
+        cout << "\tKEY\tELEMENT\n";
+        gquiz2.erase(gquiz2.begin(), gquiz2.find(3));
+        for (itr = gquiz2.begin(); itr != gquiz2.end(); ++itr) {
+                cout << '\t' << itr->first << '\t' << itr->second
+                        << '\n';
+        }
+
+        // remove all elements with key = 4
+        int num;
+        num = gquiz2.erase(4);
+        cout << "\ngquiz2.erase(4) : ";
+        cout << num << " removed \n";
+        cout << "\tKEY\tELEMENT\n";
+        for (itr = gquiz2.begin(); itr != gquiz2.end(); ++itr) {
+                cout << '\t' << itr->first << '\t' << itr->second
+                        << '\n';
+        }
+
+        cout << endl;
+
+        // lower bound and upper bound for multimap gquiz1 key =
+        // 5
+        cout << "gquiz1.lower_bound(5) : "
+                << "\tKEY = ";
+        cout << gquiz1.lower_bound(5)->first << '\t';
+        cout << "\tELEMENT = " << gquiz1.lower_bound(5)->second
+                << endl;
+        cout << "gquiz1.upper_bound(5) : "
+                << "\tKEY = ";
+        cout << gquiz1.upper_bound(5)->first << '\t';
+        cout << "\tELEMENT = " << gquiz1.upper_bound(5)->second
+                << endl;
+
+        return 0;
+}
+
+
+
+
+heap
+
+// C++ code to demonstrate the working of
+// push_heap() and pop_heap()
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+        
+        // Initializing a vector
+        vector<int> v1 = {20, 30, 40, 25, 15};
+        
+        // Converting vector into a heap
+        // using make_heap()
+        make_heap(v1.begin(), v1.end());
+        
+        // Displaying the maximum element of heap
+        // using front()
+        cout << "The maximum element of heap is : ";
+        cout << v1.front() << endl;
+        
+        // using push_back() to enter element
+        // in vector
+        v1.push_back(50);
+        
+        // using push_heap() to reorder elements
+        push_heap(v1.begin(), v1.end());
+        
+        // Displaying the maximum element of heap
+        // using front()
+        cout << "The maximum element of heap after push is : ";
+        cout << v1.front() << endl;
+        
+        // using pop_heap() to delete maximum element
+        pop_heap(v1.begin(), v1.end());
+        v1.pop_back();
+        
+        // Displaying the maximum element of heap
+        // using front()
+        cout << "The maximum element of heap after pop is : ";
+        cout << v1.front() << endl;
+        
+        return 0;
+}
+
+
+
